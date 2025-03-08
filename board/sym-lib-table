@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "HDMI2USB-rescue")(type "Legacy")(uri "${KIPRJMOD}/HDMI2USB-rescue.lib")(options "")(descr ""))
+  (lib (name "hdmi2usb")(type "Legacy")(uri "/home/ali/Documents/GitHub/HDMI2USB-numato-opsis-hardware/libraries/hdmi2usb.lib")(options "")(descr ""))
+  (lib (name "timvideos-pcie-8x")(type "Legacy")(uri "/home/ali/Documents/GitHub/HDMI2USB-numato-opsis-hardware/expansion/libraries/timvideos-pcie-8x.lib")(options "")(descr ""))
+)

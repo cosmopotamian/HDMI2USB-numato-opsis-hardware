@@ -1,0 +1,2609 @@
+{
+  "board": {
+    "3dviewports": [],
+    "design_settings": {
+      "defaults": {
+        "apply_defaults_to_fp_fields": false,
+        "apply_defaults_to_fp_shapes": false,
+        "apply_defaults_to_fp_text": false,
+        "board_outline_line_width": 0.381,
+        "copper_line_width": 0.1,
+        "copper_text_italic": false,
+        "copper_text_size_h": 1.524,
+        "copper_text_size_v": 2.032,
+        "copper_text_thickness": 0.3048,
+        "copper_text_upright": false,
+        "courtyard_line_width": 0.05,
+        "dimension_precision": 4,
+        "dimension_units": 3,
+        "dimensions": {
+          "arrow_length": 1270000,
+          "extension_offset": 500000,
+          "keep_text_aligned": true,
+          "suppress_zeroes": true,
+          "text_position": 0,
+          "units_format": 0
+        },
+        "fab_line_width": 0.1,
+        "fab_text_italic": false,
+        "fab_text_size_h": 1.0,
+        "fab_text_size_v": 1.0,
+        "fab_text_thickness": 0.15,
+        "fab_text_upright": false,
+        "other_line_width": 0.1,
+        "other_text_italic": false,
+        "other_text_size_h": 1.0,
+        "other_text_size_v": 1.0,
+        "other_text_thickness": 0.15,
+        "other_text_upright": false,
+        "pads": {
+          "drill": 4.0005,
+          "height": 4.0005,
+          "width": 4.0005
+        },
+        "silk_line_width": 0.381,
+        "silk_text_italic": false,
+        "silk_text_size_h": 1.524,
+        "silk_text_size_v": 1.524,
+        "silk_text_thickness": 0.3048,
+        "silk_text_upright": false,
+        "zones": {
+          "min_clearance": 0.127
+        }
+      },
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "meta": {
+        "filename": "board_design_settings.json",
+        "version": 2
+      },
+      "rule_severities": {
+        "annular_width": "error",
+        "clearance": "error",
+        "connection_width": "warning",
+        "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
+        "courtyards_overlap": "error",
+        "creepage": "error",
+        "diff_pair_gap_out_of_range": "error",
+        "diff_pair_uncoupled_length_too_long": "error",
+        "drill_out_of_range": "error",
+        "duplicate_footprints": "warning",
+        "extra_footprint": "warning",
+        "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_mismatch": "warning",
+        "footprint_type_mismatch": "ignore",
+        "hole_clearance": "error",
+        "hole_to_hole": "warning",
+        "holes_co_located": "warning",
+        "invalid_outline": "error",
+        "isolated_copper": "warning",
+        "item_on_disabled_layer": "error",
+        "items_not_allowed": "error",
+        "length_out_of_range": "error",
+        "lib_footprint_issues": "warning",
+        "lib_footprint_mismatch": "warning",
+        "malformed_courtyard": "error",
+        "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
+        "missing_courtyard": "ignore",
+        "missing_footprint": "warning",
+        "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
+        "npth_inside_courtyard": "ignore",
+        "padstack": "warning",
+        "pth_inside_courtyard": "ignore",
+        "shorting_items": "error",
+        "silk_edge_clearance": "warning",
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
+        "skew_out_of_range": "error",
+        "solder_mask_bridge": "error",
+        "starved_thermal": "error",
+        "text_height": "warning",
+        "text_thickness": "warning",
+        "through_hole_pad_without_hole": "error",
+        "too_many_vias": "error",
+        "track_angle": "error",
+        "track_dangling": "warning",
+        "track_segment_length": "error",
+        "track_width": "error",
+        "tracks_crossing": "error",
+        "unconnected_items": "error",
+        "unresolved_variable": "error",
+        "via_dangling": "warning",
+        "zones_intersect": "error"
+      },
+      "rules": {
+        "max_error": 0.005,
+        "min_clearance": 0.0,
+        "min_connection": 0.0,
+        "min_copper_edge_clearance": 0.1905,
+        "min_groove_width": 0.0,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
+        "min_microvia_diameter": 0.508,
+        "min_microvia_drill": 0.127,
+        "min_resolved_spokes": 2,
+        "min_silk_clearance": 0.0,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.08,
+        "min_through_hole_diameter": 0.254,
+        "min_track_width": 0.127,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.4572,
+        "solder_mask_to_copper_clearance": 0.0,
+        "use_height_for_length_calcs": true
+      },
+      "teardrop_options": [
+        {
+          "td_onpthpad": true,
+          "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
+          "td_ontrackend": false,
+          "td_onvia": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
+      "track_widths": [
+        0.0,
+        0.127,
+        0.2032,
+        0.2286,
+        0.254,
+        0.3048,
+        0.4064,
+        0.5334,
+        0.6096,
+        0.762,
+        0.9144,
+        1.778
+      ],
+      "tuning_pattern_settings": {
+        "diff_pair_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 1.0
+        },
+        "diff_pair_skew_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.4572,
+          "drill": 0.254
+        },
+        {
+          "diameter": 0.5588,
+          "drill": 0.3048
+        }
+      ],
+      "zones_allow_external_fillets": false
+    },
+    "ipc2581": {
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": ""
+    },
+    "layer_pairs": [],
+    "layer_presets": [],
+    "viewports": []
+  },
+  "boards": [],
+  "cvpcb": {
+    "equivalence_files": []
+  },
+  "erc": {
+    "erc_exclusions": [],
+    "meta": {
+      "version": 0
+    },
+    "pin_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "rule_severities": {
+      "bus_definition_conflict": "error",
+      "bus_entry_needed": "error",
+      "bus_to_bus_conflict": "error",
+      "bus_to_net_conflict": "error",
+      "different_unit_footprint": "error",
+      "different_unit_net": "error",
+      "duplicate_reference": "error",
+      "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
+      "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
+      "global_label_dangling": "warning",
+      "hier_label_mismatch": "error",
+      "label_dangling": "error",
+      "label_multiple_wires": "warning",
+      "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
+      "no_connect_connected": "warning",
+      "no_connect_dangling": "warning",
+      "pin_not_connected": "error",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
+      "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
+      "similar_labels": "warning",
+      "similar_power": "warning",
+      "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
+      "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
+      "unit_value_mismatch": "error",
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
+    }
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "HDMI2USB.kicad_pro",
+    "version": 3
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "bus_width": 12,
+        "clearance": 0.10414,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.508,
+        "microvia_drill": 0.127,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": -1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.127,
+        "via_diameter": 0.80772,
+        "via_drill": 0.254,
+        "wire_width": 6
+      }
+    ],
+    "meta": {
+      "version": 4
+    },
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": ""
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A11"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A12"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A13"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A14"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_A9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_BA0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_BA1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_BA2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_CAS_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_CKE"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_CK_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_CK_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ11"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ12"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ13"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ14"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ15"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_DQ9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_LDM"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_LDQS_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_LDQS_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_ODT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_RAS_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_RESET_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_UDM"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_UDQS_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_UDQS_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DDR3/DDR0_WE_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRXAUXCH_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRXAUXCH_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRXCONFIG1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRXCONFIG2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRX_LANEN0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRX_LANEN1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRX_LANEN2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRX_LANEN3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRX_LANEP0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRX_LANEP1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRX_LANEP2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPRX_LANEP3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTXAUXCH_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTXAUXCH_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTXCONFIG1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTXCONFIG2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTX_LANEN0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTX_LANEN1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTX_LANEN2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTX_LANEN3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTX_LANEP0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTX_LANEP1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTX_LANEP2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/DisplayPort/DPTX_LANEP3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/AVDD3V3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_INT_B"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_MDC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_MDIO"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_RESET_B"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_RXCLK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_RXCTL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_RXD0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_RXD1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_RXD2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_RXD3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_TXCLK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_TXCTL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_TXD0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_TXD1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_TXD2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_TXD3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_VCC1V0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/ETH_VCC3V3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/LED0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/LED1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/MAC_SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/MAC_SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/MAC_WP"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/VCC1V0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/XTAL1_50MHZ"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Ethernet/XTAL2_50MHZ"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DEBUG_IO0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DEBUG_IO1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFCLK_A0N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFCLK_A0P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFCLK_A1N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFCLK_A1P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFCLK_B0N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFCLK_B0P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFCLK_B1N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFCLK_B1P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFCLK_XN"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFCLK_XP"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A0N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A0P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A1N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A1P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A2N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A2P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A3N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A3P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A4N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A4P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A5N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A5P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A6N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_A6P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B0N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B0P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B1N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B1P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B2N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B2P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B3N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B3P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B4N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B4P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B5N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B5P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B6N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_B6P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_XN"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_XP"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_YN"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_YP"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_ZN"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/DIFFIO_ZP"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/HSWAP"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/MGT135MHz_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/MGT135MHz_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/MGTREFCLK0_101_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/MGTREFCLK0_101_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/MGTSMACLK_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/MGTSMACLK_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/PCIE_RESET"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/PCIO0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/PCIO1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/PCIO2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/PCIO3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/SMCLK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/SMDATA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_0_3/SWITCH"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY-IFCLK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CYPRESS-RESET"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_CTL0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_CTL1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_CTL2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_CTL3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_CTL4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_CTL5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD11"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD12"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD13"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD14"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD15"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_FD9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_INT5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PA0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PA1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PA2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PA3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PA4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PA5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PA6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PA7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PC0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PC1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PC2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PC3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PC4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PC5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PC6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_PC7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_RD"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_RD0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_RD1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_RD2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_RD3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_RD4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_RD5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_RXD0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_RXD1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_T0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_TXD0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_TXD1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/CY_WR"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/DPRXHPD"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/DPTXHPD"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/FPGA_M0_CMP_MISO"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/FPGA_M1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/INIT_B"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SD_CLK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SD_CMD"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SD_DAT0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SD_DAT1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SD_DAT2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SD_DAT3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SPI_CLK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SPI_CS_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SPI_D1_MISO2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SPI_D2_MISO3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SPI_DO_DIN_MISO1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/SPI_MOSI_CSI_N_MISO0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_0_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_0_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_1_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_1_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_2_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_2_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_CEC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_CLK_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_CLK_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_HOT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX1_SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_0_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_0_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_1_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_1_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_2_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_2_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_CEC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_CLK_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_CLK_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_HOT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_RX2_SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_0_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_0_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_1_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_1_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_2_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_2_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_CEC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_CLK_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_CLK_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_HOT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX1_SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_0_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_0_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_1_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_1_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_2_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_2_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_CEC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_CLK_N"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_CLK_P"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_HOT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/TMDS_TX2_SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_D0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_D1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_D2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_D3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_D4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_D5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_D6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_D7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_DIR"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_NXT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_REFCLK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_RESETB"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/USB_STP"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Bank_1_2/100MHz"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Power/DONE"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Power/PROG_B"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Power/RFS"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Power/SUSPEND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Power/TCK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Power/TMS"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Power/VBATT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/FPGA_Power/VFS"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/GPIOs/PRSNT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/HDMI-TX1-VCC5V0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/HDMI-TX2-VCC5V0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/HDMI_VCC5V0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P1-CEC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P1-HOT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P1-SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P1-SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P2-CEC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P2-HOT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P2-SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P2-SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P3-CEC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P3-HOT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P3-SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P3-SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P4-CEC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P4-HOT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P4-SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/HDMI/P4-SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Power/Conference 12V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Power/Consumer 12V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Power/VIN +48V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Power/VIN -48V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Power/VIN 48"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/SPI_Flash/27MHz"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/SPI_Flash/RST"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/SPI_Flash/TDO-FPGA/TDO-JTAG"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/SPI_Flash/TDO-USB/TDI-FPGA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/CPEN"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/CYDN"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/CYDP"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/CYP-RESET"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/ID"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/U1-SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/USB_5V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/USB_DM"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/USB_DP"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/XTALIN"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/USB/XTALIOUT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000178"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000182"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000189"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000192"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000193"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000194"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000195"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000198"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000199"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000200"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000202"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000203"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000205"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000206"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000207"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000211"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000213"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000214"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000217"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000218"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000232"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000233"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000235"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000249"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000250"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000251"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000254"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000255"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000256"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000257"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000258"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000259"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000260"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000261"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000262"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000263"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000266"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000268"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000269"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000271"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000275"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000279"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000280"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000288"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000289"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000290"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000292"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000298"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000300"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000301"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000302"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000303"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000304"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000305"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000306"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000308"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000309"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000312"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000313"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000314"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000316"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000319"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000327"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000330"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000331"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000332"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000333"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000335"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000336"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000337"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000339"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000340"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000341"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000342"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000343"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000344"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000345"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000346"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000348"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000349"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000350"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000351"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000352"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000353"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000354"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000357"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000359"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000360"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000361"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000362"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000363"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000364"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000365"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000366"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000367"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000368"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000369"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000370"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000372"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000373"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000377"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000382"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000387"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000388"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000391"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000400"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000409"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000410"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000411"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000412"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000413"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000414"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000415"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000416"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000417"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000418"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000419"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000420"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000421"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000422"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000424"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000425"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000426"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000427"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000428"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000429"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000430"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000431"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000432"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "N-00000433"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC12V0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC1V2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC1V5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC3V3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC4V0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VTTDDR0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VTTREF"
+      }
+    ]
+  },
+  "pcbnew": {
+    "last_paths": {
+      "gencad": "",
+      "idf": "",
+      "netlist": "HDMI2USB.net",
+      "plot": "",
+      "pos_files": "",
+      "specctra_dsn": "",
+      "step": "",
+      "svg": "",
+      "vrml": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "schematic": {
+    "annotate_start_num": 0,
+    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_fmt_presets": [],
+    "bom_fmt_settings": {
+      "field_delimiter": ",",
+      "keep_line_breaks": false,
+      "keep_tabs": false,
+      "name": "CSV",
+      "ref_delimiter": ",",
+      "ref_range_delimiter": "",
+      "string_delimiter": "\""
+    },
+    "bom_presets": [],
+    "bom_settings": {
+      "exclude_dnp": false,
+      "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "Reference",
+          "name": "Reference",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        }
+      ],
+      "filter_string": "",
+      "group_symbols": true,
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
+      "sort_asc": true,
+      "sort_field": "Reference"
+    },
+    "connection_grid_size": 50.0,
+    "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
+      "default_line_thickness": 6.0,
+      "default_text_size": 50.0,
+      "field_names": [],
+      "intersheets_ref_own_page": false,
+      "intersheets_ref_prefix": "",
+      "intersheets_ref_short": false,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
+      "junction_size_choice": 3,
+      "label_size_ratio": 0.25,
+      "operating_point_overlay_i_precision": 3,
+      "operating_point_overlay_i_range": "~A",
+      "operating_point_overlay_v_precision": 3,
+      "operating_point_overlay_v_range": "~V",
+      "overbar_offset_ratio": 1.23,
+      "pin_symbol_size": 0.0,
+      "text_offset_ratio": 0.08
+    },
+    "legacy_lib_dir": "",
+    "legacy_lib_list": [],
+    "meta": {
+      "version": 1
+    },
+    "net_format_name": "",
+    "page_layout_descr_file": "",
+    "plot_directory": "",
+    "space_save_all_events": true,
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
+    "spice_save_all_voltages": false,
+    "subpart_first_id": 65,
+    "subpart_id_separator": 0
+  },
+  "sheets": [
+    [
+      "4c757136-f0ec-451e-9676-7850f4f93a46",
+      "Root"
+    ],
+    [
+      "00000000-0000-0000-0000-000054a2b817",
+      "DisplayPort"
+    ],
+    [
+      "00000000-0000-0000-0000-000054e594a7",
+      "GPIOs"
+    ],
+    [
+      "00000000-0000-0000-0000-000052d4eb08",
+      "DDR3"
+    ],
+    [
+      "00000000-0000-0000-0000-000052d65cbf",
+      "FPGA_Bank_0_3"
+    ],
+    [
+      "00000000-0000-0000-0000-000054886dfb",
+      "Ethernet"
+    ],
+    [
+      "00000000-0000-0000-0000-000054899593",
+      "USB"
+    ],
+    [
+      "00000000-0000-0000-0000-000052d4eb52",
+      "FPGA_Power"
+    ],
+    [
+      "00000000-0000-0000-0000-000052d4ec75",
+      "FPGA_Bank_1_2"
+    ],
+    [
+      "00000000-0000-0000-0000-0000548a04aa",
+      "HDMI"
+    ],
+    [
+      "00000000-0000-0000-0000-00005489bf1e",
+      "Power"
+    ],
+    [
+      "00000000-0000-0000-0000-000052d4eb89",
+      "SPI_Flash"
+    ]
+  ],
+  "text_variables": {}
+}
